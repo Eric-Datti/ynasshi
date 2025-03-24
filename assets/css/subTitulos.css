@@ -1,0 +1,26 @@
+.video__titulo__container{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.linha {
+    width: 100px;
+    border-bottom: 3px solid var(--cor-linha);
+}
+
+.video__titulo {
+    text-align: center;
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--font-poppins);
+    font-weight: 800;
+}
+
+.galeria__titulo {
+    text-align: center;
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--font-poppins);
+    font-weight: 800;
+}

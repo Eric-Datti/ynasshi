@@ -1,0 +1,26 @@
+.galeria__container {
+    margin-bottom: 2rem;
+    
+}
+.galeria__cards__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: content-box;
+    row-gap: 5rem;
+    column-gap: 5rem;
+}
+
+.galeria-card {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.galeria__imagem {
+    width:100%;
+    object-fit: contain;
+}

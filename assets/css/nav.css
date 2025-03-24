@@ -1,0 +1,86 @@
+h1 {
+    margin: 0;
+    padding-left: 50px;
+    font-size: var(--tamanho-fonte-titulo);
+    font-weight: 800;
+}
+
+/* Container da navbar */
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+/* Ul todas listas */
+.lista__container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* pegando ultima li */
+.lista__container:last-child {
+    padding-right: 50px;
+}
+
+/* lista de li */
+.nav__link {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items: center;
+}
+
+/* imagem dentro da li */
+.nav__lista-imagem {
+    padding-right: 10px;
+}
+
+/* a href com os hiperlinks */
+.nav__link-link {
+    text-decoration: none;
+    font-family: var(--fonte-family);
+    font-size: 1.1rem;
+    color: var(--cor-preta);
+}
+
+/* a href Hover */
+.nav__link-link:hover {
+    text-decoration: underline;
+}
+
+/* .linha {
+   /*  margin-top: 1rem;
+    width: 100%;
+    border-top: 1px solid black;
+    /* margin: 2rem auto; 
+}
+
+.linha2 {
+    margin-top: 1rem;
+    width: 30%;
+    border-top: thin solid #999;
+    margin: 2rem auto;
+}*/ 
+
+@media screen and (max-width:992px){
+    .lista__container:last-child {
+        padding-right: 1rem;
+    }
+    h1 {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width:576px){
+    h1 {
+        display: none;
+    }
+    .nav__container {
+        flex-direction: column;
+        height: 23px;
+    }
+}

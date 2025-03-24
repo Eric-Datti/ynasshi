@@ -1,0 +1,70 @@
+.contato {
+    width: 100%;
+    height: 700px;
+}
+
+.contato__container {
+    display: flex;
+    justify-content: start;
+}
+
+.contato__imagem {
+    width: 50%;
+    height: 700px;
+    background-image: url('../img/yna.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 5rem;
+ }
+
+.contato__titulo {
+    font-size: var(--tamanho-fonte-titulo);
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;;
+}
+
+.contato__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.input {
+    width: 46%;
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+.input-mensagem {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    border: thin solid #999;
+    resize: none;
+}
+
+.bt-submit {
+    width: 30%;
+    border: none;
+    outline: none;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #6915b8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
