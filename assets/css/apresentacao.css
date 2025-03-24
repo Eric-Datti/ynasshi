@@ -204,3 +204,13 @@
     }
 
 }
+
+
+@media screen and (max-width:360px){
+    .apresentacao__imagem-pequena {
+        width: 35px;
+    }
+    #imagem-modelo {
+        width:300px;
+    }
+}

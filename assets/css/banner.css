@@ -30,3 +30,16 @@
         height: 130px;
     }
 }
+
+@media screen and (max-width:640px){
+    .imagem__banner{
+        height: 100px;
+    }
+}
+
+
+@media screen and (max-width:360px){
+    .imagem__banner{
+        height: 80px;
+    }
+}

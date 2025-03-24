@@ -75,12 +75,24 @@ h1 {
     }
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:700px){
     h1 {
         display: none;
     }
     .nav__container {
         flex-direction: column;
         height: 23px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .lista__container:last-child {
+        padding-right: 0;
+    }
+    h1 {
+        padding-left: 0;
+    }
+    .nav-bar {
+        display: none;
     }
 }
