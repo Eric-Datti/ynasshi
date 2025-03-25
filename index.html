@@ -59,31 +59,32 @@
                 </div>
                 <div class="apresentacao__container-texto">
                     <h2 class="apresentacao__titulo">Ynasshi</h2>
-                    <p class="apresentacao__texto">Ólaaa gente, me chamo Ynasshi e sou uma <a href=""
-                            class="apresentacao__texto__hiperlink">Vtuber</a> peixe gato.</p>
+                    <p class="apresentacao__texto">Olá, gente! Me chamo Ynasshi e sou uma <a href=""
+                            class="apresentacao__texto__hiperlink">VTuber</a> peixe-gato.</p>
 
                     <p class="apresentacao__texto">Faço parte de um grupo chamado <a href=""
-                            class="apresentacao__texto__hiperlink">KiraKara</a>, esse grupo é formado por mim e outras
-                        <a href="" class="apresentacao__texto__hiperlink">vtuber</a>
+                            class="apresentacao__texto__hiperlink">KiraKara</a>, que é formado por mim e outras
+                        <a href="" class="apresentacao__texto__hiperlink">VTubers.</a>
                     </p>
 
-                    <p class="apresentacao__texto">Tenho varios canais, mas onde eu sempre faço minhas lives, é na
-                        plataforma <a href="" class="apresentacao__texto__hiperlink">Twitch</a>, começo às 19h horario
-                        de brasília e costumo terminar as 23h</p>
+                    <p class="apresentacao__texto">Tenho vários canais, mas onde sempre faço minhas lives é na
+                        plataforma <a href="" class="apresentacao__texto__hiperlink">Twitch</a>. Começo às 19h, horário
+                        de Brasília, e costumo terminar às 23h.</p>
 
-                    <p class="apresentacao__texto">Minhas lives tem vários tipos de interações, como pode exemplo: pelo
-                        chat da plataforma, por <a href="" class="apresentacao__texto__hiperlink">livePix</a> que seria
-                        mensagems lidas por um bot na live, por meio de donates. Tambem temos a opção por <a href=""
-                            class="apresentacao__texto__hiperlink">bits</a><span class="apresentacao__texto_span">
-                            (clicando no link, você sera direcionado a uma página onde tera uma lista de quantos bits é
-                            nescessario para tocar um audio durante a live)</span></p>
+                    <p class="apresentacao__texto">Minhas lives têm vários tipos de interação, como, por exemplo: pelo
+                        chat da plataforma, ou po <a href="" class="apresentacao__texto__hiperlink">LivePix</a> que são
+                        mensagens lidas por um bot na live, ou por meio de donates. Também temos a opção de <a href=""
+                            class="apresentacao__texto__hiperlink">Bits</a><span class="apresentacao__texto_span">
+                            (clicando no link, você será direcionado a uma página onde terá uma lista de quantos bits
+                            são necessários para tocar um áudio durante a live).</span></p>
 
-                    <p class="apresentacao__texto">Também a varios outros lugares onde vocês pode me acompanhar, tanto
-                        em vídeos como <a href="" class="apresentacao__texto__hiperlink">youtube</a> como em plostagem
-                        no <a href="" class="apresentacao__texto__hiperlink">instagram</a>. Vou deixar todas minhas
-                        redes sociais, para vocês darem uma conferida, espero todos vocês as 19h na <a href=""
-                            class="apresentacao__texto__hiperlink">twitch</a> para compartilharmos grandes momentos
-                        juntos. Um grande beijo da sua peixe-gato Ynasshi</p>
+                    <p class="apresentacao__texto">Também há vários outros lugares onde vocês podem me acompanhar, tanto
+                        em vídeos no <a href="" class="apresentacao__texto__hiperlink">Youtube</a> quanto em postagens
+                        no <a href="" class="apresentacao__texto__hiperlink">Instagram</a>. Vou deixar todas as minhas
+                        redes sociais para vocês darem uma conferida. Espero todos vocês às 19h na <a href=""
+                            class="apresentacao__texto__hiperlink">Twitch</a> para compartilharmos grandes momentos
+                        juntos.
+                        Um grande beijo da sua peixe-gato, Ynasshi.</p>
 
                     <ul class="apresentacao__lista-botao">
                         <li class="apresentacao__lista-botao__link"><img src="./assets/img/twitch.svg" alt=""><a
@@ -169,16 +170,27 @@
             <h3 class="video__titulo">Galeria</h3>
             <div class="linha"></div>
         </div>
+
+        <div class="galeria__modal" id="galeria-modal">
+            <div class="galeria__container-modal">
+                <span class="galeria__modal-x" id="fechar">x</span>
+                <img src="" alt="" class="galeria__modal-img" id="galeria__modal-img">
+            </div>
+        </div>
+
         <section class="galeria__container" id="galeria">
             <ul class="galeria__cards__container">
                 <li class="galeria-card"><img src="./assets/img/galeria/313_Sem_Titulo_20231202094541.png" alt=""
-                        class="galeria__imagem"></li>
-                <li class="galeria-card"><img src="./assets/img/galeria/fudnowawa.png" alt="" class="galeria__imagem">
+                        class="galeria__imagem"
+                        onclick="abrirGaleria('./assets/img/galeria/313_Sem_Titulo_20231202094541.png')"></li>
+                <li class="galeria-card"><img src="./assets/img/galeria/fudnowawa.png" alt="" class="galeria__imagem"
+                        onclick="abrirGaleria('./assets/img/galeria/fudnowawa.png')">
                 </li>
-                <li class="galeria-card"><img src="./assets/img/galeria/fundopikapng.png" alt=""
-                        class="galeria__imagem"></li>
+                <li class="galeria-card"><img src="./assets/img/galeria/fundopikapng.png" alt="" class="galeria__imagem"
+                        onclick="abrirGaleria('./assets/img/galeria/fundopikapng.png')"></li>
                 <li class="galeria-card"><img src="./assets/img/galeria/788_Sem_Titulo_20221110032703.png" alt=""
-                        class="galeria__imagem"></li>
+                        class="galeria__imagem"
+                        onclick="abrirGaleria('./assets/img/galeria/788_Sem_Titulo_20221110032703.png')"></li>
             </ul>
         </section>
 
@@ -256,6 +268,7 @@
 
 
     <script src="./trocarRoupa.js"></script>
+    <script src="./modalGaleria.js"></script>
 </body>
 
 </html>
