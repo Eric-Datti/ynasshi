@@ -1,7 +1,3 @@
-.galeria__container {
-    margin-bottom: 2rem;
-    
-}
 .galeria__cards__container {
     display: flex;
     justify-content: center;
@@ -13,7 +9,7 @@
 }
 
 .galeria-card {
-    width: 35%;
+    width: 45%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,13 +17,7 @@
 }
 
 .galeria__imagem {
-    width:100%;
-    object-fit: contain;
-    transition:  transform 0.25s ease-in-out;
-}
-
-.galeria__imagem:hover {
-    transform: scale(1.1);
+    width: 100%;
 }
 
 .galeria__modal {
@@ -38,26 +28,111 @@
     bottom: 0;
     left: 0;
     display: none;
-    z-index: 1;
+    z-index: 5;
     align-items: center;
     justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.galeria__container-modal {
+    display: flex;
+    gap: .5rem;
 }
 
 .galeria__modal-x {
-    position: absolute;
-    top: 50px;  
-    right: 100PX;
     font-size: 80px;
+    font-weight: bold;
     cursor: pointer; 
+    z-index: 5;
 }
 
 .galeria__modal-img {
     width: 100%;
-    height: 100%;
     object-fit: contain;
 }
 
 .galeria__container-modal {
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .galeria__container-modal {
+        width: 80%;
+        height: auto;
+        padding-right: 1.5rem;
+    }
+
+    .galeria__container-modal {
+        gap: 1rem;
+    }
+    .galeria__modal-x {
+    font-size: 60px;
+    font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .galeria__container-modal {
+        width: 80%;
+        height: auto;
+        padding-right: 1.2rem;
+    }
+
+    .galeria__container-modal {
+        gap: 1rem;
+    }
+    .galeria__modal-x {
+    font-size: 60px;
+    font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .galeria__container-modal {
+        width: 80%;
+        height: auto;
+        padding-right: 1rem;
+    }
+
+    .galeria__container-modal {
+        gap: 1rem;
+    }
+    .galeria__modal-x {
+    font-size: 60px;
+    font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .galeria__container-modal {
+        width: 80%;
+        height: auto;
+        padding-right: 1.1rem;
+    }
+
+    .galeria__container-modal {
+        gap: 1rem;
+    }
+    .galeria__modal-x {
+    font-size: 50px;
+    font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .galeria__container-modal {
+        width: 80%;
+        height: auto;
+        padding-right: 1rem;
+    }
+
+    .galeria__container-modal {
+        gap: .5rem;
+    }
+    .galeria__modal-x {
+    font-size: 40px;
+    }
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" type="imagex/png" href="./assets/img/home.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Ynasshi | Vtuber | KiraKara </title>
 </head>
 
@@ -28,7 +29,6 @@
         </div>
     </nav>
 
-    <!-- <div class="linha"></div> -->
     <div class="imagem__banner"></div>
 
     <main>
@@ -104,65 +104,65 @@
             </div>
         </section>
 
-        <!-- <div class="linha2"></div>
-        <div class="imagem__banner__videos"></div> -->
-
         <div class="video__titulo__container">
             <div class="linha"></div>
             <h3 class="video__titulo">Vídeos</h3>
             <div class="linha"></div>
         </div>
 
-        <section class="video__container" id="video">
-            <div class="video__cards__container">
-                <div class="video__cards-card">
+        <section class="swiper" id="video">
+            <div class="swiper-wrapper">
+                <div class="video__cards-card swiper-slide">
                     <iframe src="https://www.youtube.com/embed/OTHN3Lv3V0Q" title="quando VOCÊ tá jogando BOLA"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-youtube"></iframe>
                 </div>
-                <div class="video__cards-card">
+                <div class="video__cards-card swiper-slide">
                     <iframe src="https://www.youtube.com/embed/2CUp-7HGl_0" title="RESTROSPECTIVA MEMES.."
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-youtube"></iframe>
                 </div>
-                <div class="video__cards-card">
+                <div class="video__cards-card swiper-slide">
                     <iframe src="https://www.youtube.com/embed/ILzC0WRRaGE"
                         title="CODENAMES, mas meus AMIGOS SÃO BURROS" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-youtube"></iframe>
                 </div>
-                <div class="video__cards-card">
+                <div class="video__cards-card swiper-slide">
                     <iframe src="https://www.youtube.com/embed/GmHGLlh44rQ" title="Minha história VTUBER | Animação"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-youtube"></iframe>
                 </div>
-                <div class="video__cards-card">
+                <div class="video__cards-card swiper-slide">
                     <iframe src="https://www.youtube.com/embed/GOEBKNzv-5E" title="Julgando Salgadinhos 2"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-youtube"></iframe>
                 </div>
-                <div class="video__cards-card">
+                <div class="video__cards-card swiper-slide">
                     <iframe src="https://www.youtube.com/embed/MJRaWPTl_r8" title="MINECRAFT VS ROBLOX" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-youtube"></iframe>
                 </div>
-                <div class="video__cards-card">
+                <div class="video__cards-card swiper-slide">
                     <iframe src="https://www.youtube.com/embed/JDL-fUSoUKA" title="Respondendo seus COMENTÁRIOS 1"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-youtube"></iframe>
                 </div>
-                <div class="video__cards-card">
+                <div class="video__cards-card swiper-slide">
                     <iframe src="https://www.youtube.com/embed/-b_150C-7V0"
                         title="20 COISAS QUE VOCÊ SEMPRE QUIS SABER 🤯🧠" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-youtube"></iframe>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </section>
 
         <div class="video__titulo__container">
@@ -173,48 +173,25 @@
 
         <div class="galeria__modal" id="galeria-modal">
             <div class="galeria__container-modal">
-                <span class="galeria__modal-x" id="fechar">x</span>
                 <img src="" alt="" class="galeria__modal-img" id="galeria__modal-img">
+                <span class="galeria__modal-x" id="fechar">x</span>
             </div>
         </div>
 
-        <section class="galeria__container" id="galeria">
-            <ul class="galeria__cards__container">
-                <li class="galeria-card"><img src="./assets/img/galeria/313_Sem_Titulo_20231202094541.png" alt=""
+        <div class="swiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="./assets/img/galeria/313_Sem_Titulo_20231202094541.png" alt=""
                         class="galeria__imagem"
                         onclick="abrirGaleria('./assets/img/galeria/313_Sem_Titulo_20231202094541.png')"></li>
-                <li class="galeria-card"><img src="./assets/img/galeria/fudnowawa.png" alt="" class="galeria__imagem"
-                        onclick="abrirGaleria('./assets/img/galeria/fudnowawa.png')">
-                </li>
-                <li class="galeria-card"><img src="./assets/img/galeria/fundopikapng.png" alt="" class="galeria__imagem"
+                <li class="swiper-slide"><img src="./assets/img/galeria/fudnowawa.png" alt="" class="galeria__imagem"
+                        onclick="abrirGaleria('./assets/img/galeria/fudnowawa.png')"></li>
+                <li class="swiper-slide"><img src="./assets/img/galeria/fundopikapng.png" alt="" class="galeria__imagem"
                         onclick="abrirGaleria('./assets/img/galeria/fundopikapng.png')"></li>
-                <li class="galeria-card"><img src="./assets/img/galeria/788_Sem_Titulo_20221110032703.png" alt=""
-                        class="galeria__imagem"
-                        onclick="abrirGaleria('./assets/img/galeria/788_Sem_Titulo_20221110032703.png')"></li>
             </ul>
-        </section>
-
-        <!-- <div class="linha2"></div>
-        <div class="imagem__banner__contato"></div>
-
-        <section class="contato" id="parceria">
-            <div class="contato__container">
-                <div class="contato__imagem"></div>
-                <div class="contato__formulario">
-                    <h4 class="contato__titulo">Envie seu pedido de parceria</h4>
-                    <form action="" method="get" class="contato__form">
-                        <input type="text" name="nome" id="" placeholder="Digite seu Nome" class="input">
-                        <input type="email" name="" id="" placeholder="Digite seu Email" class="input">
-                        <input type="email" name="" id="" placeholder="Digite o Assunto" class="input">
-                        <input type="email" name="" id="" placeholder="CNPJ" class="input">
-                        <textarea type="message" name="" placeholder="Digite sua Menssagem"
-                            class="input-mensagem"></textarea>
-                        <button type="submit" class="bt-submit">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </section>  
-    -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </main>
     <footer class="rodape">
         <div class="rodape__container">
@@ -265,10 +242,10 @@
         </div>
         </div>
     </footer>
-
-
     <script src="./trocarRoupa.js"></script>
     <script src="./modalGaleria.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./carroselGaleria.js"></script>
 </body>
 
 </html>
