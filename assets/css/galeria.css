@@ -1,26 +1,16 @@
-.galeria__cards__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    box-sizing: content-box;
-    row-gap: 5rem;
-    column-gap: 5rem;
-}
-
-.galeria-card {
-    width: 45%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.galeria__imagem {
+    width: 90%;
+    height: 80%;
+    object-fit: contain;
+    transition: transform .2s ease-in-out;
     cursor: pointer;
 }
 
-.galeria__imagem {
-    width: 100%;
+.galeria__imagem:hover {
+    transform: scale(1.1);
 }
 
-.galeria__modal {
+.galeria__modal{
     background-color: transparent;
     position: fixed;
     height: 100%;
@@ -28,64 +18,50 @@
     bottom: 0;
     left: 0;
     display: none;
-    z-index: 5;
+    z-index: 1;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
     backdrop-filter: blur(10px);
 }
 
 .galeria__container-modal {
+    width: 70%;
+    height: 70%;
     display: flex;
-    gap: .5rem;
+    justify-content: start;
+    cursor: pointer;
 }
 
 .galeria__modal-x {
-    font-size: 80px;
+    position: fixed;
+    z-index: 50;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: 0;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    opacity: 70%;
+    cursor: pointer;
     font-weight: bold;
-    cursor: pointer; 
-    z-index: 5;
+
 }
 
 .galeria__modal-img {
     width: 100%;
-    object-fit: contain;
-}
-
-.galeria__container-modal {
-    width: 50%;
-    
+    height: 100%;
+    object-fit:contain;
 }
 
 
 
-@media screen and (max-width: 1400px) {
+/*@media screen and (max-width: 992px) {
     .galeria__container-modal {
         width: 80%;
         height: auto;
-        padding-right: 1.5rem;
-    }
-
-    .galeria__container-modal {
-        gap: 1rem;
     }
     .galeria__modal-x {
-    font-size: 60px;
-    font-weight: bold;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .galeria__container-modal {
-        width: 80%;
-        height: auto;
-        padding-right: 1.2rem;
-    }
-
-    .galeria__container-modal {
-        gap: 1rem;
-    }
-    .galeria__modal-x {
-    font-size: 60px;
     font-weight: bold;
     }
 }
@@ -103,6 +79,12 @@
     .galeria__modal-x {
     font-size: 60px;
     font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .galeria__imagem {
+        width: 100%;
     }
 }
 
@@ -136,3 +118,4 @@
     font-size: 40px;
     }
 }
+    */
