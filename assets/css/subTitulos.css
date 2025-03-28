@@ -4,10 +4,11 @@
     align-items: center;
     gap: 1rem;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .linha {
-    width: 100px;
+    width: 28%;
     border-bottom: 3px solid var(--cor-linha);
 }
 
@@ -23,4 +24,10 @@
     font-size: var(--tamanho-fonte-titulo);
     font-family: var(--font-poppins);
     font-weight: 800;
+}
+
+@media screen and (max-width: 576px) {
+    .linha {
+        width: 18%;
+    }
 }

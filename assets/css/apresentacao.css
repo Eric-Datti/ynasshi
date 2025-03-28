@@ -99,7 +99,7 @@
 }
 
 .apresentacao__lista-botao__link:hover {
-    border-color: var(--cor-hyperlink);
+    border-color: rgb(184, 181, 181);
 }
 
 .botao-link {
