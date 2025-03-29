@@ -42,6 +42,8 @@
 
 #imagem-modelo {
     width: 600px;
+    height: 600px;
+    object-fit: contain;
 }
 
 /* container texto a direita */
@@ -90,23 +92,22 @@
 
 .apresentacao__lista-botao__link {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 40px;
     border: thin solid var(--cor-preta);
     border-radius: 10px;
-    gap: 1rem;
-}
-
-.apresentacao__lista-botao__link:hover {
-    border-color: rgb(184, 181, 181);
 }
 
 .botao-link {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: var(--cor-preta);
     font-weight: 500;
+    gap: 1rem;
+    width: 200px;
+    height: 40px;
+    transition: all .2s ease-in-out;
 }
 
 @media screen and (max-width:1440px) {
